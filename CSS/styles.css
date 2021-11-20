@@ -1,0 +1,125 @@
+:root {
+  --primary-text-color: #757575;
+  --litle-text-color: #212121;
+  --accent-color: #2150f3;
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/*logo*/
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.12;
+  letter-spacing: 0.03em;
+  color: var(--litle-text-color);
+  text-decoration: none;
+}
+.logo2 {
+  color: var(--accent-color);
+}
+
+/*site-nave*/
+
+.site-nav a {
+  color: var(--litle-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.site-nav a.current {
+  color: var(--accent-color);
+}
+.auth-nav a {
+  color: var(--primary-text-color);
+}
+.auth-nav a:hover,
+.auth-nav a:focus {
+  color: var(--accent-color);
+}
+.auth-nav a.current {
+  color: var(--accent-color);
+}
+.hero .title {
+  color: white;
+}
+
+.feature-list .title {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--litle-text-color);
+}
+.feature-list .link {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--primary-text-color);
+}
+
+.hero .link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: #2196f3;
+  color: white;
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--litle-text-color);
+}
+.workers-list .title {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--litle-text-color);
+}
+.workers-list .link {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--primary-text-color);
+}
+.last .link {
+  font-size: 14px;
+  line-height: 1.7;
+  color: white;
+}
+.last .lid {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.all .filter-button.current {
+  background-color: #2196f3;
+  color: white;
+}
+.all .filter-button {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--litle-text-color);
+}
+
+.all button:focus,
+.all button:hover {
+  background-color: #2196f3;
+}
+.projects .link {
+  font-size: 18px;
+  line-height: 2;
+  color: var(--litle-text-color);
+}
+.projects .lid {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--primary-text-color);
+}
