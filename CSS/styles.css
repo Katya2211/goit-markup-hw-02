@@ -1,13 +1,13 @@
 :root {
   --primary-text-color: #757575;
   --litle-text-color: #212121;
-  --accent-color: #2150f3;
+  --accent-color: #2196f3;
+  --additional-color: #ffffff;
 }
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
 }
-
 ul {
   list-style: none;
 }
@@ -18,61 +18,77 @@ ul {
   font-size: 26px;
   line-height: 1.12;
   letter-spacing: 0.03em;
-  color: var(--litle-text-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
-.logo2 {
-  color: var(--accent-color);
+.logo_second {
+  color: var(--litle-text-color);
 }
 
 /*site-nave*/
 
-.site-nav a {
+.site-nav .link {
   color: var(--litle-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14x;
+  letter-spacing: 0.02em;
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
-.site-nav a.current {
+.site-nav .link.current {
   color: var(--accent-color);
 }
-.auth-nav a {
+.auth-nav .link {
   color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.auth-nav a:hover,
-.auth-nav a:focus {
+.auth-nav .link:hover,
+.auth-nav .link:focus {
   color: var(--accent-color);
 }
-.auth-nav a.current {
+.auth-nav .link.current {
   color: var(--accent-color);
 }
 .hero .title {
-  color: white;
+  color: var(--additional-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  background-color: var(--litle-text-color);
+}
+.hero .link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: var(--accent-color);
+  color: var(--additional-color);
 }
 
 .feature-list .title {
-  font-family: Roboto;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--litle-text-color);
 }
-.feature-list .link {
+.feature-list .text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: var(--primary-text-color);
 }
 
-.hero .link {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.8;
-  background-color: #2196f3;
-  color: white;
-}
 .section-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -83,43 +99,70 @@ ul {
   line-height: 1.18;
   color: var(--litle-text-color);
 }
-.workers-list .link {
+.workers-list .text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   color: var(--primary-text-color);
 }
-.last .link {
-  font-size: 14px;
-  line-height: 1.7;
-  color: white;
+.end-page {
+  background-color: var(--litle-text-color);
 }
-.last .lid {
+.address-section .link {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  color: var(--additional-color);
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
 }
-.all .filter-button.current {
-  background-color: #2196f3;
-  color: white;
+.address-section .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-style: normal;
 }
-.all .filter-button {
+.btn .current {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
-  color: var(--litle-text-color);
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--additional-color);
+  background-color: var(--accent-color);
 }
-
-.all button:focus,
-.all button:hover {
-  background-color: #2196f3;
+.btn .filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--litle-text-color);
+  cursor: pointer;
+}
+.btn .filter-button:hover,
+.btn .filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--additional-color);
 }
 .projects .link {
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--litle-text-color);
 }
-.projects .lid {
+.projects .text {
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.project .title {
+  display: none;
 }
